@@ -1,0 +1,16 @@
+{
+  "name": "lab3-tuition-payment-resilience",
+  "version": "1.0.0",
+  "description": "Lab 3: Kết nối và duy trì kết nối giữa các service - Hệ thống thanh toán học phí trực tuyến (Fee Service & Bank Service)",
+  "main": "fee-service/server.js",
+  "scripts": {
+    "start:bank": "node bank-service/server.js",
+    "start:fee": "node fee-service/server.js",
+    "start:fee-naive": "node fee-service/server-naive.js",
+    "test:scenario3": "node scripts/scenario3-loadtest.js",
+    "test:scenarios": "node scripts/test-scenarios.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
